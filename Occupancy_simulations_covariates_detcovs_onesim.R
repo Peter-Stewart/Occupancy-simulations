@@ -12,7 +12,6 @@ library(unmarked)
 # Study design ####
 sites <- 3000 # Number of sites surveyed
 K <- 40 # Number of times each site is surveyed (e.g. no. camera nights)
-det.prob <- 0.5 # Probability of detection does not depend on any covariates in this model
 
 # Covariate dependence structure ####
 fig1 <- graph.formula(X -+ Psi, Z -+ X, Z -+ Psi, 
