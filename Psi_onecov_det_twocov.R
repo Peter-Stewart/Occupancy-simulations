@@ -193,10 +193,14 @@ for(run in 1:n){
   
   B1df <- as.data.frame(rep(B1, times=1))
   colnames(B1df) <- "B1"
-  sumdf1 <- cbind(sumdf1,B1df)
-  sumdf2 <- cbind(sumdf2,B1df)
-  sumdf3 <- cbind(sumdf3,B1df)
-  sumdf4 <- cbind(sumdf4,B1df)
+  B2df <- as.data.frame(rep(B2, times=1))
+  colnames(B2df) <- "B2"
+  B3df <- as.data.frame(rep(B3, times=1))
+  colnames(B3df) <- "B3"
+  sumdf1 <- cbind(sumdf1,B1df, B2df, B3df)
+  sumdf2 <- cbind(sumdf2,B1df, B2df, B3df)
+  sumdf3 <- cbind(sumdf3,B1df, B2df, B3df)
+  sumdf4 <- cbind(sumdf4,B1df, B2df, B3df)
   
   # Append summary table dataframe to master results 
   run <- paste('run:',run,sep='')
